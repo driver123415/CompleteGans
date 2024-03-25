@@ -1,0 +1,26 @@
+-- Script Auto Claim Mission
+-- Script Auto PlayForHours
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "PlayForHours"
+        },
+        [2] = codes[5] -- Menggunakan kode kelima dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+
+
+-- Script Auto CollectEggs
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "CollectEggs"
+        },
+        [2] = codes[5] -- Menggunakan kode kelima dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
