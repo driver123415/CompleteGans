@@ -1,0 +1,36 @@
+-- Script Auto Boost
+-- Boost 1 2xEggsBoost
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "2xEggsBoost"
+        },
+        [2] = codes[4] -- Menggunakan kode keempat dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+
+-- Boost 1 2xCoinsBoost
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "2xCoinsBoost"
+        },
+        [2] = codes[4] -- Menggunakan kode keempat dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+
+-- Boost 1 2xLuckBoost
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "2xLuckBoost"
+        },
+        [2] = codes[4] -- Menggunakan kode keempat dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
