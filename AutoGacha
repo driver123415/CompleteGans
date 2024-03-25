@@ -1,0 +1,17 @@
+-- Script Auto Gacha Habisin Coins
+local args = {
+    [1] = {
+        [1] = {
+            [1] = {
+                ["Legendary"] = true,
+                ["Basic"] = true,
+                ["Epic"] = true,
+                ["Uncommon"] = true,
+                ["Rare"] = true
+            }
+        },
+        [2] = codes[3] -- Menggunakan kode ketiga dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
