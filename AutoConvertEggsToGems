@@ -1,0 +1,14 @@
+-- Mengulangi sebanyak 50 kali
+for i = 1, 50 do
+    -- Script Auto Convert Eggs To Gems
+    local args = {
+        [1] = {
+            [1] = {
+                [1] = 1
+            },
+            [2] = codes[2] -- Menggunakan kode kedua dari tabel codes
+        }
+    }
+
+    game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+end
