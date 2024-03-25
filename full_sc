@@ -1,0 +1,95 @@
+-- Kode-kode pemisah
+local codes = {
+    "xM", -- Script Claim 1 - 50
+    "ep", -- Script Auto Convert Eggs To Gems
+    "0g", -- Script Auto Gacha Habisin Coins
+    "VT", -- Script Auto Boost
+    "8u" -- Script Auto Claim Mission
+}
+
+-- Script Claim 1 - 50
+for i = 1, 50 do
+    local args = {
+        [1] = {
+            [1] = {
+                [1] = i
+            },
+            [2] = codes[1] -- Menggunakan kode pertama dari tabel codes
+        }
+    }
+
+    game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+end
+
+-- Mengulangi sebanyak 50 kali
+for i = 1, 50 do
+    -- Script Auto Convert Eggs To Gems
+    local args = {
+        [1] = {
+            [1] = {
+                [1] = 1
+            },
+            [2] = codes[2] -- Menggunakan kode kedua dari tabel codes
+        }
+    }
+
+    game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+end
+
+-- Script Auto Gacha Habisin Coins
+local args = {
+    [1] = {
+        [1] = {
+            [1] = {
+                ["Legendary"] = true,
+                ["Basic"] = true,
+                ["Epic"] = true,
+                ["Uncommon"] = true,
+                ["Rare"] = true
+            }
+        },
+        [2] = codes[3] -- Menggunakan kode ketiga dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+
+-- Script Auto Boost
+-- Boost 1 2xEggsBoost
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "2xEggsBoost"
+        },
+        [2] = codes[4] -- Menggunakan kode keempat dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+
+-- Script Auto Claim Mission
+-- Script Auto PlayForHours
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "PlayForHours"
+        },
+        [2] = codes[5] -- Menggunakan kode kelima dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
+
+
+-- Script Auto CollectEggs
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "CollectEggs"
+        },
+        [2] = codes[5] -- Menggunakan kode kelima dari tabel codes
+    }
+}
+
+game:GetService("ReplicatedStorage").dataRemoteEvent:FireServer(unpack(args))
