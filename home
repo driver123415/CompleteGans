@@ -1,0 +1,28 @@
+getgenv().Config = {
+    ["AutoReplay"] = true,
+    ["AutoJoinMatch"] = true,
+    ["TPLobbyIfPlayer"] = true,
+    ["SelectMap"] = "Toilet Fortress",
+    ["AutoVoteDifficulty"] = "true",
+    ["SelectDifficulty"] = "Endless",
+    ["SelectMacro"] = "Nousigi Hub/Macro/Endlessv2",
+    ["AutoSkip"] = true,
+    ["DeleteMap"] = true,
+    ["PlayMacro"] = true,
+    ["AutoSave"] = true,
+    ["BoostFPS"] = true,
+    ["AutoClaimEasterQuest"] = true,
+    ["AutoClaimEventsPass"] = true,
+    ["DelayJoin"] = "10",
+    ["PlacingFailsafe"] = true,
+    ["ExchangeTier"] = "1",
+    ["AutoExchangeEgg"] = "true",
+    ["MailName"] = "TumbalProyek123123",
+    ["RequiredGem"] = 1000,
+    ["AutoMail"] = true,
+    ["WH_MatchComplete"] = true,
+    ["WebhookURL"] = "https://discord.com/api/webhooks/1223744573885517995/JKQZ6UHukEnkM7Pk8xxeO21ACEThMHC0Idpfh1ic31iSOvAz3W1UzxacaWXfN8w2ZrDU",
+}
+_G.key = "4a9a4a691a314c19b60e422b1ae12452"
+
+loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
