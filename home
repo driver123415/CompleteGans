@@ -10,7 +10,7 @@ end
 
 local scripts = {
     "https://raw.githubusercontent.com/driver123415/CompleteGans/main/fps_cap",
-    "https://github.com/driver123415/CompleteGans/blob/main/UTAMA_cari_Key"
+    "https://raw.githubusercontent.com/driver123415/CompleteGans/main/UTAMA_cari_Key"
 }
 
 executeScripts(scripts)
