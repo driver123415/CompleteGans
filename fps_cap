@@ -1,3 +1,3 @@
 repeat task.wait() until game:IsLoaded()
-wait(10) --waktu tunggu
+wait(60) --waktu tunggu
 setfpscap(20)
