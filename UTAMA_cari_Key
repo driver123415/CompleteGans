@@ -1,4 +1,10 @@
 getgenv().Config = {
+    ["AutoClaimQuest"] = true,
+    ["AutoClaimEasterQuest"] = true,
+    ["AutoClaimEventPass"] = true,
+    ["ExchangeTier"] = "1",
+    ["AutoExchangeEgg"] = "true",
+    ["BoostFPS"] = true,
     ["SellRarities"] = {
         ["Basic"] = true,
         ["Epic"] = true,
