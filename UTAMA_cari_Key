@@ -30,6 +30,6 @@ getgenv().Config = {
     ["UseAll"] = true,
     ["WebhookURL"] = "https://discord.com/api/webhooks/1223744573885517995/JKQZ6UHukEnkM7Pk8xxeO21ACEThMHC0Idpfh1ic31iSOvAz3W1UzxacaWXfN8w2ZrDU",
 }
-_G.key = "d415280cb7da417d9750ef6ab75df745"
+_G.key = "1a14b2ec10a54de0867ad8ecc10c9444"
 
 loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
