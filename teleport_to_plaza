@@ -1,0 +1,27 @@
+-- PlaceID tujuan untuk teleportasi
+local destinationPlaceID = 14682939953
+
+-- Fungsi untuk memeriksa apakah pemain berada di tempat yang benar
+local function checkPlaceID(player)
+    -- Periksa apakah pemain berada di tempat dengan PlaceID yang diinginkan
+    if game.PlaceId == 13775256536 then
+        return true
+    else
+        return false
+    end
+end
+
+-- Fungsi untuk menteleport pemain ke tempat tujuan
+local function teleportPlayer(player)
+    -- Periksa apakah pemain berada di tempat yang benar
+    if checkPlaceID(player) then
+        -- Mentelportasi pemain ke tempat tujuan
+        game:GetService("TeleportService"):Teleport(destinationPlaceID, player)
+    end
+end
+
+-- Event untuk menangani saat pemain bergabung
+game.Players.PlayerAdded:Connect(function(player)
+    -- Teleportasi pemain saat mereka bergabung ke permainan
+    teleportPlayer(player)
+end)
