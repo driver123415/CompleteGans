@@ -10,7 +10,9 @@ end
 
 local scripts = {
     "https://raw.githubusercontent.com/driver123415/CompleteGans/main/fps_cap",
-    "https://raw.githubusercontent.com/driver123415/collaborate/main/kickttd"
+    "https://raw.githubusercontent.com/driver123415/CompleteGans/main/tptp",
+    "https://raw.githubusercontent.com/driver123415/CompleteGans/main/detectKick",
+    "https://raw.githubusercontent.com/driver123415/CompleteGans/main/Anti_AFK"
 }
 
 executeScripts(scripts)
