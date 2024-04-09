@@ -10,7 +10,7 @@ while true do
 
     coroutine.resume(Thread1)
     
-    wait(210)--nunggu di plaza
+    wait(1100)--nunggu di plaza 18 menit
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
     loadstring(game:HttpGet("https://raw.githubusercontent.com/driver123415/CompleteGans/main/teleport_to_lobby"))()
     print("Teleporting Player To Leave Plaza")
