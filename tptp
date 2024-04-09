@@ -1,0 +1,17 @@
+repeat task.wait() until game:IsLoaded()
+wait(5)
+
+while true do
+    wait(30)
+    local Thread1 = coroutine.create(function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/driver123415/CompleteGans/main/teleport_to_plaza"))()
+        print("Teleporting Player To Enter Plaza")
+    end)
+
+    coroutine.resume(Thread1)
+    
+    wait(210)--nunggu di plaza
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/driver123415/CompleteGans/main/teleport_to_lobby"))()
+    print("Teleporting Player To Leave Plaza")
+end
