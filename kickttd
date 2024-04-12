@@ -1,1 +1,27 @@
+print("Script kick lobby")
 
+-- PlaceID target for checks
+local targetPlaceID = 13775256536
+
+-- Function to kick player after waiting
+local function kickPlayerAfterWait(player)
+    print("Player", player.Name, "is in the specific game, waiting for 30 seconds before kick.")
+    wait(30)  -- Waiting for 30 seconds
+    print("Time is up. Sending kick prompt to", player.Name)
+    player:Kick("You have been kicked after a required wait time.")
+end
+
+-- Event to handle when a player joins
+game.Players.PlayerAdded:Connect(function(player)
+    print("Player", player.Name, "has joined the game.")
+    -- Check if player is in the specific Place ID
+    if game.PlaceId == targetPlaceID then
+        print("Player", player.Name, "is at the specified Place ID:", targetPlaceID)
+        -- Start the kick process in a separate thread
+        spawn(function()
+            kickPlayerAfterWait(player)
+        end)
+    else
+        print("Player", player.Name, "is not in the targeted game for the operation.")
+    end
+end)
