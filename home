@@ -9,9 +9,7 @@ local function executeScripts(scripts)
 end
 
 local scripts = {
-    "https://raw.githubusercontent.com/driver123415/CompleteGans/main/fps_cap",
     "https://raw.githubusercontent.com/driver123415/CompleteGans/main/teleport_to_plaza",
-    "https://raw.githubusercontent.com/driver123415/CompleteGans/main/Anti_AFK",
     "https://raw.githubusercontent.com/driver123415/CompleteGans/main/detectKick"
 }
 
