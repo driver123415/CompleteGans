@@ -1,0 +1,5 @@
+local input = loadstring(game:HttpGet('https://pastebin.com/raw/dYzQv3d8'))()
+
+while wait(1) do
+    input.hold(Enum.KeyCode.Space, 0.05)
+end
