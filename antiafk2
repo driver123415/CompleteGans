@@ -1,4 +1,4 @@
-local input = loadstring(game:HttpGet('https://pastebin.com/raw/dYzQv3d8'))()
+local input = loadstring(game:HttpGet('https://raw.githubusercontent.com/driver123415/CompleteGans/main/test'))()
 
 while wait(1) do
     input.hold(Enum.KeyCode.Space, 0.05)
