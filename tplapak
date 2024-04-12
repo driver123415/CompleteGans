@@ -1,0 +1,29 @@
+repeat task.wait() until game:IsLoaded()  -- Menunggu game dimuat sepenuhnya
+wait(15)  -- Menunggu tambahan 15 detik setelah game dimuat
+
+local allowedPlaceId = 14682939953  -- PlaceId yang diizinkan
+
+-- Cek apakah game sedang dimainkan di PlaceId yang diizinkan
+if game.PlaceId == allowedPlaceId then
+    print("Player Teleporting TDS Run")
+    print("Script dijalankan di tempat yang diizinkan.")
+
+    -- Mendapatkan referensi pemain lokal
+    local player = game.Players.LocalPlayer
+    if player then
+        -- Memastikan karakter sudah ada
+        repeat wait(1) until player.Character
+        local humanoidRootPart = player.Character:FindFirstChild("HumanoidRootPart")
+        
+        if humanoidRootPart then
+            -- Memindahkan HumanoidRootPart ke posisi yang ditentukan
+            humanoidRootPart.CFrame = CFrame.new(1438.19, 120.15, 2547.92)
+        else
+            print("Error: HumanoidRootPart tidak ditemukan pada karakter.")
+        end
+    else
+        print("Error: Player lokal tidak ditemukan.")
+    end
+else
+    print("Script tidak dijalankan karena game tidak berada di PlaceId yang diizinkan.")
+end
