@@ -6,7 +6,7 @@ local targetPlaceID = 13775256536
 -- Function to kick player after waiting
 local function kickPlayerAfterWait(player)
     print("Player", player.Name, "is in the specific game, waiting for 30 seconds before kick.")
-    wait(30)  -- Waiting for 30 seconds
+    wait(60)  -- Waiting for 30 seconds
     print("Time is up. Sending kick prompt to", player.Name)
     player:Kick("You have been kicked after a required wait time.")
 end
